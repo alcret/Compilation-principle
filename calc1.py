@@ -80,7 +80,7 @@ class Interpreter(object):
         # and assign the next token to the self.current_token,
         # otherwise raise an exception.
         if self.current_token.type == token_type:
-            self.current_token = self.get_next_token()
+            self.current_token = self.get_next_token()   #词法分析器方法
         else:
             self.error()
 
